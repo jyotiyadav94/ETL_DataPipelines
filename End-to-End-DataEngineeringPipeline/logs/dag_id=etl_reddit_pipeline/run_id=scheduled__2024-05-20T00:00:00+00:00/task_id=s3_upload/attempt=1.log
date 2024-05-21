@@ -1,0 +1,45 @@
+[2024-05-21T13:59:56.296+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-21T13:59:56.304+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-21T13:59:56.306+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-05-21T13:59:56.315+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): s3_upload> on 2024-05-20 00:00:00+00:00
+[2024-05-21T13:59:56.328+0000] {standard_task_runner.py:57} INFO - Started process 58 to run task
+[2024-05-21T13:59:56.336+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 's3_upload', 'scheduled__2024-05-20T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmpxvvawehq']
+[2024-05-21T13:59:56.342+0000] {standard_task_runner.py:85} INFO - Job 5: Subtask s3_upload
+[2024-05-21T13:59:56.408+0000] {task_command.py:416} INFO - Running <TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [running]> on host 9f75b109240b
+[2024-05-21T13:59:56.500+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Yusuf Ganiyu' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='s3_upload' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-20T00:00:00+00:00'
+[2024-05-21T13:59:58.168+0000] {logging_mixin.py:151} INFO - Bucket created
+[2024-05-21T13:59:58.715+0000] {logging_mixin.py:151} INFO - File uploaded to s3
+[2024-05-21T13:59:58.721+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-05-21T13:59:58.747+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_reddit_pipeline, task_id=s3_upload, execution_date=20240520T000000, start_date=20240521T135956, end_date=20240521T135958
+[2024-05-21T13:59:58.895+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-05-21T13:59:58.978+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T14:12:55.106+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-21T14:12:55.117+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-21T14:12:55.120+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-05-21T14:12:55.132+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): s3_upload> on 2024-05-20 00:00:00+00:00
+[2024-05-21T14:12:55.140+0000] {standard_task_runner.py:57} INFO - Started process 58 to run task
+[2024-05-21T14:12:55.148+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 's3_upload', 'scheduled__2024-05-20T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmp6i1b9ude']
+[2024-05-21T14:12:55.155+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask s3_upload
+[2024-05-21T14:12:55.234+0000] {task_command.py:416} INFO - Running <TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [running]> on host c67d33b74b4a
+[2024-05-21T14:12:55.301+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Jyoti Yadav' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='s3_upload' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-20T00:00:00+00:00'
+[2024-05-21T14:12:56.067+0000] {logging_mixin.py:151} INFO - Bucket already exists
+[2024-05-21T14:12:56.507+0000] {logging_mixin.py:151} INFO - File uploaded to s3
+[2024-05-21T14:12:56.516+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-05-21T14:12:56.573+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_reddit_pipeline, task_id=s3_upload, execution_date=20240520T000000, start_date=20240521T141255, end_date=20240521T141256
+[2024-05-21T14:12:56.663+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-05-21T14:12:56.750+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T14:31:25.593+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-21T14:31:25.654+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-21T14:31:25.657+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-05-21T14:31:25.682+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): s3_upload> on 2024-05-20 00:00:00+00:00
+[2024-05-21T14:31:25.724+0000] {standard_task_runner.py:57} INFO - Started process 58 to run task
+[2024-05-21T14:31:25.734+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 's3_upload', 'scheduled__2024-05-20T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmp70tb8qwk']
+[2024-05-21T14:31:25.747+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask s3_upload
+[2024-05-21T14:31:25.831+0000] {task_command.py:416} INFO - Running <TaskInstance: etl_reddit_pipeline.s3_upload scheduled__2024-05-20T00:00:00+00:00 [running]> on host 391bfe04c991
+[2024-05-21T14:31:25.897+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Jyoti Yadav' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='s3_upload' AIRFLOW_CTX_EXECUTION_DATE='2024-05-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-20T00:00:00+00:00'
+[2024-05-21T14:31:27.566+0000] {logging_mixin.py:151} INFO - Bucket created
+[2024-05-21T14:31:28.063+0000] {logging_mixin.py:151} INFO - File uploaded to s3
+[2024-05-21T14:31:28.066+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-05-21T14:31:28.099+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_reddit_pipeline, task_id=s3_upload, execution_date=20240520T000000, start_date=20240521T143125, end_date=20240521T143128
+[2024-05-21T14:31:28.170+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-05-21T14:31:28.234+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
