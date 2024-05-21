@@ -1,0 +1,39 @@
+Text
+"<s>[INST] As a restaurant menu manager, your role is to gather below information based on input data (Name of the dish).
+generate the output
+    
+### information to be extracted:
+<Ingredients>: Only Ingredients included in the dish.
+<Description>: Briefly describe the dish.
+<Allergens>: Only Choose relevant options from this list - [Cereals, Crustaceans, Egg, Fish, Peanuts, SOYBEAN, Latte, Nuts, Celery, Mustard, Sesame seeds, Sulfur dioxide and sulphites, Shell, Clams].
+<Additional Information>: Only Choose relevant options from this list - [Spicy, Vegan, Gluten free, Vegetarian].
+
+### Output Format
+""ingredients"": All Ingredients in a List,
+""description"": Description in a string,
+""allergen"": All allergen in a List,
+""Additional_information"": All Additional_information in a List
+ 
+ ### Input date:
+ tiramisu
+ ### Outputs:
+ {'ingredients': ['Mascarpone', 'Eggs', 'Savoiardi', 'Sugar', 'Coffee', 'Bitter cocoa powder'], 'description': 'Tiramisu is a classic Italian dessert made with creamy mascarpone cheese , eggs, and ladyfinger (ladyfinger) biscuits, sweetened with sugar and soaked in coffee, then dusted with bitter cocoa powder.', 'allergen': ['Cereals', 'Egg'], 'Additional_information': ['Gluten free' , 'Vegetarian']}"
+"<s>[INST] As a restaurant menu manager, your role is to gather below information based on input data (Name of the dish).
+generate the output
+    
+### information to be extracted:
+<Ingredients>: Only Ingredients included in the dish.
+<Description>: Briefly describe the dish.
+<Allergens>: Only Choose relevant options from this list - [Cereals, Crustaceans, Egg, Fish, Peanuts, SOYBEAN, Latte, Nuts, Celery, Mustard, Sesame seeds, Sulfur dioxide and sulphites, Shell, Clams].
+<Additional Information>: Only Choose relevant options from this list - [Spicy, Vegan, Gluten free, Vegetarian].
+
+### Output Format
+""ingredients"": All Ingredients in a List,
+""description"": Description in a string,
+""allergen"": All allergen in a List,
+""Additional_information"": All Additional_information in a List
+ 
+ ### Input date:
+ Cookies
+ ### Outputs:
+ {'ingredients': ['Flour 00', 'Butter', 'Bicarbonate', 'Eggs', 'Cane sugar', 'Sugar', 'Dark chocolate chips', 'Fine salt'], 'description': 'These ""Cookies"" are a delightful treat, traditionally made from fine Italian flour (00 flour), butter (butter), baking soda (bicarbonate), eggs (eggs), both brown and white sugar (brown sugar and sugar), melted chocolate drops, and a pinch of fine salt to enhance the flavors.', 'allergen': ['Cereals', 'Crustaceans', 'Egg', 'Fish', 'Peanuts ', 'SOYBEAN', 'Nuts', 'Celery', 'Mustard', 'Sesame seeds', 'Sulfur dioxide and sulphites', 'Shell', 'Clams'], 'Additional_information': ['Gluten free']}"
