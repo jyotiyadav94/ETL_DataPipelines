@@ -20,7 +20,7 @@ The pipeline is designed to:
 
 ## Architecture
 
-![RedditDataEngineering.png](assets/DataEngineering.png)
+![Alt text](<asserts/DataEngineering.png>)
 
 1. **Reddit API**: Source of the data.
 2. **Apache Airflow & Celery**: Orchestrates the ETL process and manages task distribution.
